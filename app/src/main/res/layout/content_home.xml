@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="269dp"
+            android:layout_height="158dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="126dp"
+            app:srcCompat="@drawable/scale"
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="66dp" />
+
+        <Button
+            android:id="@+id/lgreen"
+            android:layout_width="25dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/red"
+            android:layout_marginEnd="120dp"
+            android:background="@color/Green" />
+
+        <Button
+            android:id="@+id/yellow"
+            android:layout_width="25dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/red"
+            android:layout_centerHorizontal="true"
+            android:background="@color/Yellow" />
+
+        <Button
+            android:id="@+id/orange"
+            android:layout_width="25dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/red"
+            android:layout_marginStart="134dp"
+            android:background="@color/Orange" />
+
+        <Button
+            android:id="@+id/red"
+            android:layout_width="25dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="171dp"
+            android:layout_marginStart="82dp"
+            android:background="@color/Red" />
+
+        <Button
+            android:id="@+id/dgreen"
+            android:layout_width="23dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/red"
+            android:layout_marginEnd="62dp"
+            android:background="@color/DGreen" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

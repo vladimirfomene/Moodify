@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">moodify</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_activity1_2">Activity1_2</string>
+    <string name="title_activity_3">Activity3</string>
+    <string name="title_activity_4_5">Activity_4_5</string>
+    <string name="title_activity_scale_">Scale_Act</string>
+</resources>
