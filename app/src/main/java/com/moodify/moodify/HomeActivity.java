@@ -2,8 +2,6 @@ package com.moodify.moodify;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -27,16 +25,24 @@ public class HomeActivity extends AppCompatActivity {
 
         Red.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent next = new Intent(HomeActivity.this,Activity1_2.class);
-                startActivity(next);
+                Intent whatsappIntent = new Intent();
+                whatsappIntent.setAction(Intent.ACTION_SEND);
+                whatsappIntent.putExtra(Intent.EXTRA_TEXT, "Hello, I need your help");
+                whatsappIntent.setPackage("com.whatsapp");
+                whatsappIntent.setType("text/plain");
+                startActivity(whatsappIntent);
 
             }
         });
 
         Orange.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent next = new Intent(HomeActivity.this,Activity1_2.class);
-                startActivity(next);
+                Intent whatsappIntent = new Intent();
+                whatsappIntent.setAction(Intent.ACTION_SEND);
+                whatsappIntent.putExtra(Intent.EXTRA_TEXT, "Hello, I need your help");
+                whatsappIntent.setPackage("com.whatsapp");
+                whatsappIntent.setType("text/plain");
+                startActivity(whatsappIntent);
             }
         });
 
@@ -49,25 +55,19 @@ public class HomeActivity extends AppCompatActivity {
 
         Lgreen.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent next = new Intent(HomeActivity.this,Activity_4_5.class);
+                Intent next = new Intent(HomeActivity.this,PlayerActivity.class);
+                next.putExtra("asset", "four");
                 startActivity(next);
             }
         });
 
         Dgreen.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent next = new Intent(HomeActivity.this,Activity_4_5.class);
+                Intent next = new Intent(HomeActivity.this,PlayerActivity.class);
+                next.putExtra("asset", "five");
                 startActivity(next);
             }
         });
-
-
-
-
-
-
-
-
 
     }
 

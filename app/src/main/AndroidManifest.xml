@@ -25,7 +25,7 @@
             android:label="@string/title_activity_3"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity_4_5"
+            android:name=".PlayerActivity"
             android:label="@string/title_activity_4_5"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
