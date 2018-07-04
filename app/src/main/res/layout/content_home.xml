@@ -14,7 +14,8 @@
         android:layout_height="match_parent"
         android:visibility="visible"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/editText4"
@@ -46,7 +47,9 @@
             android:layout_alignBottom="@+id/lgreen"
             android:layout_alignParentStart="true"
             android:layout_marginStart="34dp"
-            app:srcCompat="@drawable/one" />
+            app:srcCompat="@drawable/one"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="34dp" />
 
         <ImageView
             android:id="@+id/orange"
@@ -55,7 +58,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignTop="@+id/red"
             android:layout_marginStart="88dp"
-            app:srcCompat="@drawable/four" />
+            app:srcCompat="@drawable/four"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="88dp" />
 
         <ImageView
             android:id="@+id/red"
@@ -65,7 +70,9 @@
             android:layout_alignParentEnd="true"
             android:layout_marginBottom="119dp"
             android:layout_marginEnd="86dp"
-            app:srcCompat="@drawable/five" />
+            app:srcCompat="@drawable/five"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="86dp" />
 
         <ImageView
             android:id="@+id/dgreen"
@@ -74,7 +81,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignTop="@+id/lgreen"
             android:layout_marginEnd="24dp"
-            app:srcCompat="@drawable/three" />
+            app:srcCompat="@drawable/three"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp" />
 
         <Button
             android:id="@+id/button2"

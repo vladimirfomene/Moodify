@@ -1,11 +1,13 @@
 package com.moodify.moodify;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -17,11 +19,11 @@ public class HomeActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-         Button Red = (Button) findViewById(R.id.red);
-         Button Orange = (Button) findViewById(R.id.orange);
-         Button Yellow = (Button) findViewById(R.id.yellow);
-         Button Lgreen = (Button) findViewById(R.id.lgreen);
-         Button Dgreen = (Button) findViewById(R.id.dgreen);
+         ImageView Red = (ImageView) findViewById(R.id.one);
+         ImageView Orange = (ImageView) findViewById(R.id.orange);
+         ImageView Yellow = (ImageView) findViewById(R.id.yellow);
+         ImageView Lgreen = (ImageView) findViewById(R.id.lgreen);
+         ImageView Dgreen = (ImageView) findViewById(R.id.dgreen);
 
         Red.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
